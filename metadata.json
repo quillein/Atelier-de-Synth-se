@@ -1,0 +1,5 @@
+{
+  "name": "Identity & Pose Synthesizer",
+  "description": "A high-end visual effects engine that merges identity from one image with the pose and action of another, creating photorealistic syntheses.",
+  "requestFramePermissions": []
+}

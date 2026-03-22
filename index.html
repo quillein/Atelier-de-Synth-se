@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier de Coquette | Synthesis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&family=Inter:wght@300;400;500&display=swap');
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fdfcf0;
+      color: #4a4a4a;
+      overflow-x: hidden;
+    }
+    .serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .accent {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+    }
+    .soft-glow {
+      box-shadow: 0 0 20px rgba(142, 151, 117, 0.2);
+    }
+    .earth-gradient {
+      background: linear-gradient(135deg, #e9edc9 0%, #fefae0 100%);
+    }
+    .floating {
+      animation: float 8s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(1deg); }
+    }
+    .sparkle {
+      pointer-events: none;
+      position: absolute;
+      animation: sparkleAnim 1.5s linear forwards;
+    }
+    @keyframes sparkleAnim {
+      0% { transform: scale(0); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: scale(1.5); opacity: 0; }
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
